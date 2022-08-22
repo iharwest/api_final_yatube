@@ -51,6 +51,7 @@ python manage.py runserver
 ### Примеры запросов к API
 
 Получение списка всех публикаций или создание новой:
+<<<<<<< HEAD
 ```
 api/v1/posts/:(GET, POST)
 ```
@@ -86,3 +87,40 @@ api/v1/jwt/refresh/:(POST)
 ```
 api/v1/jwt/verify/:(POST)
 ```
+=======
+```
+api/v1/posts/:(GET, POST)
+```
+Получение, редактирование или удаление выбранной публикации по id:
+```
+api/v1/posts/{post_id}/:(GET, PUT, PATCH, DELETE)
+```
+Получение списка всех групп:
+```
+api/v1/groups/:(GET)
+```
+Получение информации о группе по id:
+```
+api/v1/groups/{group_id}/:(GET)
+```
+Получение всех комментариев или их добавление к публикации:
+```
+api/v1/posts/{post_id}/comments/:(GET, POST)
+```
+Получение, редактирование или удаление комментария к публикации по id:
+```
+api/v1/posts/{post_id}/comments/{comment_id}/:(GET, PUT, PATCH, DELETE) 
+```
+Передача логина и пароля, получение JWT-токена:
+```
+api/v1/jwt/create/:(POST)
+```
+Обновление JWT-токена:
+```
+api/v1/jwt/refresh/:(POST)
+```
+Проверка JWT-токена:
+```
+api/v1/jwt/verify/:(POST)
+```
+>>>>>>> d3d95fae3d2dfd6fa78a89fe8394ed06a7cdb81c
