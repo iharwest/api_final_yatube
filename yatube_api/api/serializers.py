@@ -42,11 +42,6 @@ class FollowSerializer(serializers.ModelSerializer):
 
     def validate_following(self, following):
         user = self.context['request'].user
-        if not following:
-            raise ValidationError(
-                detail='Отсутствует обязательное поле в теле запроса.',
-                code=status.HTTP_400_BAD_REQUEST,
-            )
         if user == following:
             raise ValidationError(
                 detail='Вы не можете подписаться на себя.',
