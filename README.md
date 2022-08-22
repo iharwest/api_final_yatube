@@ -52,15 +52,18 @@ python manage.py runserver
 ```
 api/v1/posts/:(GET, POST) - получение списка всех публикаций или создание новой.
 
-api/v1/posts/{post_id}/:(GET, PUT, PATCH, DELETE) - получение, редактирование, редактирование или удаление выбранной публикации по id.
+api/v1/posts/{post_id}/:(GET, PUT, PATCH, DELETE) - получение, 
+редактирование или удаление выбранной публикации по id.
 
 api/v1/groups/:(GET) - получение списка всех групп.
 
 api/v1/groups/{group_id}/:(GET) - получение информации о группе по id.
 
-api/v1/posts/{post_id}/comments/:(GET, POST) - получение всех комментариев или их добавление к публикации.
+api/v1/posts/{post_id}/comments/:(GET, POST) - получение всех комментариев 
+или их добавление к публикации.
 
-api/v1/posts/{post_id}/comments/{comment_id}/:(GET, PUT, PATCH, DELETE) получение, редактирование или удаление комментария к публикации по id.
+api/v1/posts/{post_id}/comments/{comment_id}/:(GET, PUT, PATCH, DELETE) получение, 
+редактирование или удаление комментария к публикации по id.
 
 api/v1/jwt/create/:(POST) - передача логина и пароля, получение JWT-токена.
 
