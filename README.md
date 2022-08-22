@@ -123,4 +123,3 @@ api/v1/jwt/refresh/:(POST)
 ```
 api/v1/jwt/verify/:(POST)
 ```
->>>>>>> d3d95fae3d2dfd6fa78a89fe8394ed06a7cdb81c
